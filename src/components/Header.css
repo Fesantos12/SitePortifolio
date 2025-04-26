@@ -1,0 +1,28 @@
+.element {
+  position: relative;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding-bottom: 1px;
+  cursor: pointer; /* Opção para mudar o cursor quando passar o mouse */
+}
+
+/* A borda será criada usando o pseudo-elemento ::after */
+.element::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Espessura da borda */
+  background-color: #cad2c5; /* Cor da borda */
+  transition: width 0.3s ease; /* Animação suave da largura */
+}
+
+/* Animação ao passar o mouse (hover) */
+.element:hover::after {
+  width: 100%; /* A borda se expande para 100% quando o mouse passa */
+}
+
+a.active {
+  border-bottom: #cad2c5;
+}
