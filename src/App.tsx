@@ -25,7 +25,7 @@ export default function App() {
               </a>
             </button>
           </div>
-          <div className="w-96 h-96 bg-[url(../src/assets/Euzinho.jpg)] bg-cover rounded-full max-lg:size-60" />
+          <div className="w-96 h-96 bg-[url(../src/assets/Euzinho.jpg)] bg-cover rounded-full max-lg:size-60 shrink-0" />
         </div>
         <Footer />
       </div>
